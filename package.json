@@ -1,0 +1,12 @@
+{
+  "name": "jbc-landing",
+  "version": "1.0.0",
+  "description": "Just Breath Chris (JBC): Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Michael Bruce Allen",
+  "license": "ISC"
+}
