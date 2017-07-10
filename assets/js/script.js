@@ -1,12 +1,37 @@
-var draw = SVG('lungs').size(686, 635);
+var lung = document.getElementById('lungs');
+
+window.onresize = function(e) {
+  setLungHeight(e.currentTarget);
+}
+function setLungHeight(target) {
+  var height = target.clientHeight || target.innerHeight;
+  lung.style.height = '' + (height * 0.6);
+
+}
+
+setLungHeight(window);
+
 
 
 // NAV buttons
 var blog = document.getElementById('blog');
 var funds = document.getElementById('funds');
-var nav = document.getElementById('nav');
 
 
+
+
+
+
+funds.addEventListener('mouseover', blueFlash);
+funds.addEventListener('mouseout', lungDefault);
+blog.addEventListener('mouseover', redFlash);
+blog.addEventListener('mouseout', lungDefault);
+
+//
+// SVG Manipulation
+//
+
+var draw = SVG('lungs').size(686, 635);
 
 // lungPath and pipePath in svgPath.js must be imported in HTML
 var lungs = draw.path(lungPath);
@@ -56,8 +81,3 @@ function redFlash() {
 }
 
 lungDefault();
-
-funds.addEventListener('mouseover', blueFlash);
-funds.addEventListener('mouseout', lungDefault);
-blog.addEventListener('mouseover', redFlash);
-blog.addEventListener('mouseout', lungDefault);

@@ -13,12 +13,12 @@ a {
   color: inherit;
 }
 
+/* Title */
 #jbc {
   background-color: rgba(255, 255, 255, 0.06);
   width: 200px;
   margin: auto;
-  font-size: 5em;
-  font-weight: 500;
+  font-size: 10vh;
   padding: 10px;
   padding-bottom: 15px;
 }
@@ -28,103 +28,37 @@ a {
   list-style: none;
 }
 
-#jbc_overlay {
-  font-weight: normal;
-  position: absolute;
-  font-size: 6em;
-  top: 1.2em;
-  left: calc(50% - 1.2em);
-  color: #09d;
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
-
+/* SVG component */
 #lungs {
-  max-width: 100%;
-  height: auto;
+  max-width: 80vw;
 }
-
 
 nav {
   display: flex;
   max-width: 686px;
   margin: auto;
   justify-content: space-around;
-  font-size: 4em;
+  font-size: 8vh;
 }
 
-.blog.arrow+.fundraiser.arrow {
-  margin-left: 3.5em;
-}
-
-
-.blog.arrow {
-  display: flex;
-
-}
 .nav-center {
   display: flex;
   justify-content: space-between;
   flex-basis: 200px;
   cursor: pointer;
 }
-.fundraiser.arrow {}
 
-.blog.arrow:hover {
+#nav .blog+.fundraiser {
+  margin-left: 3.5em;
+}
+
+#nav .blog:hover {
   color: #a00;
 }
-.fundraiser.arrow:hover {
+#nav .fundraiser:hover {
   color: #09d;
 }
 
-@media screen and (max-width: 1000px) {
-  #jbc {
-    font-size: 4em;
-  }
-}
 
-@media screen and (max-width: 900px) {
-  #jbc {
-    width: 30%;
-    font-size: 3em;
-  }
-  #nav {
-    max-width: 100%;
-    font-size: 3.2em;
-  }
-  #lungs {
-    width: 80%;
-    margin-bottom: 30px;
-  }
-}
-
-
-@media screen and (max-width: 650px) {
-  #jbc {
-    width: 30%;
-    font-size: 3em;
-  }
-  #nav {
-    max-width: 100%;
-    font-size: 2em;
-  }
-  #lungs {
-    width: 80%;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #jbc {
-    width: 30%;
-    font-size: 3em;
-  }
-  #nav {
-    max-width: 100%;
-    font-size: 1.5em;
-  }
-  #lungs {
-    width: 80%;
-    margin-bottom: 30px;
-  }
+@media screen and (max-heght: 900px) {
 }
