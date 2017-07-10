@@ -18,20 +18,6 @@ body {
   display: inline-block;
   list-style: none;
 }
-#jbc .just {}
-#jbc .breath {}
-#jbc .chris {}
-
-#lungs {
-
-  /*position: relative;*/
-  /*background: url('../images/simple.svg.svg');
-  background-repeat: no-repeat;
-  background-position: center;*/
-  /*max-width: 100%;
-  height: 500px;*/
-
-}
 
 #jbc_overlay {
   font-weight: normal;
@@ -42,6 +28,22 @@ body {
   color: #09d;
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+
+#jbc .just {}
+#jbc .breath {}
+#jbc .chris {}
+
+#lungs {
+  /*position: relative;*/
+  /*background: url('../images/simple.svg.svg');
+  background-repeat: no-repeat;
+  background-position: center;*/
+  max-width: 100%;
+  height: 650px;
+
+}
+
 
 nav {
   font-size: 3em;
