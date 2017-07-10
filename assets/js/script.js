@@ -4,11 +4,9 @@ window.onresize = function(e) {
   setLungHeight(e.currentTarget);
 }
 function setLungHeight(target) {
-var height = target.clientHeight || target.innerHeight;
-var width = target.clientWidth || target.innerWidth;
-  lung.style.height = '' + (height * 0.6);
-
-
+  var height = target.clientHeight || target.innerHeight;
+  var width = target.clientWidth || target.innerWidth;
+  lung.style.height = '' + Math.floor(height * 0.6) + 'px';
 }
 
 setLungHeight(window);

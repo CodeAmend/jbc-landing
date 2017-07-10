@@ -16,7 +16,7 @@ a {
 /* Title */
 #jbc {
   background-color: rgba(255, 255, 255, 0.06);
-  width: 200px;
+  width: 250px;
   margin: auto;
   font-size: 10vh;
   padding: 10px;
@@ -63,6 +63,7 @@ nav {
 @media screen and (max-width: 700px) {
   #jbc {
     font-size: 8vh;
+
   }
   #nav {
     font-size: 6vh;
