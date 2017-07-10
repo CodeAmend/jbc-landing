@@ -1,12 +1,13 @@
 body {
   background-color: #000;
   text-align: center;
-  color: #fff;
+  color: #ddd;
+  font-style:
 }
 
 #jbc {
   background-color: rgba(255, 255, 255, 0.06);
-  width: 150px;
+  width: 200px;
   margin: auto;
   font-size: 5em;
   font-weight: 500;
@@ -30,35 +31,33 @@ body {
 }
 
 
-#jbc .just {}
-#jbc .breath {}
-#jbc .chris {}
-
 #lungs {
-  /*position: relative;*/
-  /*background: url('../images/simple.svg.svg');
-  background-repeat: no-repeat;
-  background-position: center;*/
   max-width: 100%;
-  height: 650px;
-
+  height: auto;
 }
 
 
 nav {
-  font-size: 3em;
+  display: flex;
+  max-width: 686px;
+  margin: auto;
+  justify-content: space-around;
+  font-size: 4em;
 }
 
 .blog.arrow+.fundraiser.arrow {
   margin-left: 3.5em;
 }
 
-.arrow {
-  display: inline-block;
-}
 
-.blog.arrow {}
-.fundraiser.arrow {}
+.blog.arrow {
+  display: flex;
+  flex-basis: 100px;
+}
+.fundraiser.arrow {
+display: flex;
+flex-basis: 100px;
+}
 
 .blog.arrow:hover {
   color: #a00;
