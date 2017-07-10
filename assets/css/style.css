@@ -60,5 +60,11 @@ nav {
 }
 
 
-@media screen and (max-heght: 900px) {
+@media screen and (max-width: 700px) {
+  #jbc {
+    font-size: 8vh;
+  }
+  #nav {
+    font-size: 6vh;
+  }
 }
