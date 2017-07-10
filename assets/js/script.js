@@ -26,8 +26,15 @@ blog.addEventListener('mouseout', lungDefault);
 //
 // SVG Manipulation
 //
-
 var draw = SVG('lungs').size(686, 635);
+
+// JBC LOGO
+// var text = draw.text("Just Breath Chris");
+// text.attr({
+//   fill: '#fff'
+// })
+
+// LUNGS
 
 // lungPath and pipePath in svgPath.js must be imported in HTML
 var lungs = draw.path(lungPath);
