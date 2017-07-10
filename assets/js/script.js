@@ -12,12 +12,15 @@ var nav = document.getElementById('nav');
 var lungs = draw.path(lungPath);
 var pipes = draw.path(pipePath);
 var lungGroup = draw.group();
+lungGroup.add(lungs);
+lungGroup.add(pipes);
 
 lungs.translate(0, 123);
 
+lungGroup.attr({
+  opacity: 0.3
+})
 function lungDefault() {
-  lungs.stop(true, true)
-  pipes.stop(true, true)
   lungs.animate().attr({
     fill: '#454545'
   });
@@ -26,19 +29,32 @@ function lungDefault() {
     fill: '#A0A0A0'
   });
 }
-
 function blueFlash() {
-  lungs.stop(true);
-  pipes.stop(true)
-  lungs.animate({ ease: '<>', duration: 400 }).attr({
+  lungs.stop(true, true);
+  pipes.stop(true, true);
+  lungs.animate({ duration: 1000 }).attr({
     fill: '#82b9ff'
   });
 
   pipes.animate().attr({
-    fill: '#50a0ff'
+    fill: '#aed6f1'
   });
 }
 
-lungDefault();
+function redFlash() {
+  lungs.stop(true, true);
+  pipes.stop(true, true);
+  lungs.animate({ duration: 1000 }).attr({
+    fill: '#Fb4335'
+  });
+
+  pipes.animate().attr({
+    fill: '#e6b0aa'
+  });
+}
+redFlash()
+// lungDefault();
 funds.addEventListener('mouseover', blueFlash);
 funds.addEventListener('mouseout', lungDefault);
+blog.addEventListener('mouseover', redFlash);
+blog.addEventListener('mouseout', lungDefault);
