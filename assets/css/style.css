@@ -16,16 +16,12 @@ a {
 /* Title */
 #jbc {
   background-color: rgba(255, 255, 255, 0.06);
-  width: 200px;
+  width: 220px;
+  letter-spacing: 15px;
   margin: auto;
   font-size: 10vh;
-  padding: 10px;
+  padding-left: 15px;
   padding-bottom: 15px;
-}
-
-#jbc li {
-  display: inline-block;
-  list-style: none;
 }
 
 /* SVG component */
