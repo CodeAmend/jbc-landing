@@ -3,6 +3,7 @@ var lung = document.getElementById('lungs');
 window.onresize = function(e) {
   setLungHeight(e.currentTarget);
 }
+
 function setLungHeight(target) {
   var height = target.clientHeight || target.innerHeight;
   var width = target.clientWidth || target.innerWidth;
@@ -12,14 +13,9 @@ function setLungHeight(target) {
 setLungHeight(window);
 
 
-
 // NAV buttons
 var blog = document.getElementById('blog');
 var funds = document.getElementById('funds');
-
-
-
-
 
 
 funds.addEventListener('mouseover', blueFlash);
@@ -44,7 +40,7 @@ lungGroup.add(pipes);
 lungs.translate(0, 123);
 
 lungGroup.attr({
-  opacity: 0.3
+  opacity: 0.4
 });
 
 function lungDefault() {
@@ -60,11 +56,11 @@ function blueFlash() {
   lungs.stop(true, true);
   pipes.stop(true, true);
   lungs.animate({ duration: 1000 }).attr({
-    fill: '#82b9ff'
+    fill: '#00bdff'
   });
 
   pipes.animate().attr({
-    fill: '#aed6f1'
+    fill: '#aed6f5'
   });
 }
 
