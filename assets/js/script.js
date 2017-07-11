@@ -1,4 +1,9 @@
+var main = document.getElementById('main')
 var lung = document.getElementById('lungs');
+
+setTimeout(toggleMain, 2000);
+
+
 
 window.onresize = function(e) {
   setLungHeight(e.currentTarget);
@@ -28,11 +33,6 @@ blog.addEventListener('mouseout', lungDefault);
 //
 var draw = SVG('lungs').size(686, 635);
 
-// JBC LOGO
-// var text = draw.text("Just Breath Chris");
-// text.attr({
-//   fill: '#fff'
-// })
 
 // LUNGS
 
@@ -83,4 +83,7 @@ function redFlash() {
   });
 }
 
-lungDefault();
+function toggleMain() {
+  lungDefault();
+  main.classList.toggle('hidden');
+}

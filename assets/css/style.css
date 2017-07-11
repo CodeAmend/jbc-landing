@@ -24,6 +24,10 @@ a {
   padding-bottom: 15px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* SVG component */
 #lungs {
   max-width: 80vw;

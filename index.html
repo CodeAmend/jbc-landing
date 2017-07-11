@@ -9,20 +9,27 @@
     <title>Just Breath Chris</title>
 
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.2/svg.min.js"></script>
+    <script>
+      var clip = new Audio();
+      clip.src = './assets/sounds/breath.mp3';
+    </script>
   </head>
   <body>
 
-    <div id="jbc">jbc</div>
+    <header id="jbc">jbc</header>
 
-    <svg viewbox="0 0 686 630" id="lungs"></svg>
+    <main id="main" class="hidden">
+      <svg viewbox="0 0 686 630" id="lungs"></svg>
 
-    <nav id="nav">
-      <div class="nav-center">
-        <a href="https://justbreathechris.blogspot.com/" id="blog" class="blog">The<br>story</a>
-        <a id="funds" class="fundraiser">fund-<br>raiser</a>
-      </div>
-    </nav>
+      <nav id="nav">
+        <section class="nav-center">
+          <a onmouseover="clip.play()" href="https://justbreathechris.blogspot.com/" id="blog" class="blog">The<br>story</a>
+          <a onmouseover="clip.play()" id="funds" class="fundraiser">fund-<br>raiser</a>
+        </section>
+      </nav>
+    </main>
 
   </body>
 
