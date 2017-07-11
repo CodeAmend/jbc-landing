@@ -1,10 +1,6 @@
 var main = document.getElementById('main')
 var lung = document.getElementById('lungs');
 
-// setTimeout(toggleMain, 2000);
-toggleMain();
-
-
 window.onresize = function(e) {
   setLungHeight(e.currentTarget);
 }
@@ -83,7 +79,4 @@ function redFlash() {
   });
 }
 
-function toggleMain() {
-  lungDefault();
-  main.classList.toggle('hidden');
-}
+lungDefault();

@@ -12,27 +12,26 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.2/svg.min.js"></script>
 
-    <script>
+    <script type="text/javascript">
       var breathIn = new Audio();
       var breathOut = new Audio();
-      breathIn.src = './assets/sounds/breath-in.mp3';
-      breathOut.src = './assets/sounds/breath-out.mp3';
+      breathIn.src = './assets/sounds/breath-in.mp3'
+      breathOut.src = './assets/sounds/breath-out.mp3'
     </script>
+
   </head>
   <body>
 
     <header id="jbc">jbc</header>
 
-    <main id="main" class="hidden">
-      <svg viewbox="0 0 686 630" id="lungs"></svg>
+    <svg viewbox="0 0 686 630" id="lungs"></svg>
 
-      <nav id="nav">
-        <section class="nav-center">
-          <a onmouseover="breathOut.play()" href="https://justbreathechris.blogspot.com/" id="blog" class="blog">The<br>story</a>
-          <a onmouseover="breathIn.play()" id="funds" class="fundraiser">fund-<br>raiser</a>
-        </section>
-      </nav>
-    </main>
+    <nav id="nav">
+      <section class="nav-center">
+        <a onmouseover="breathOut.play()" href="https://justbreathechris.blogspot.com/" id="blog" class="blog">The<br>story</a>
+        <a onmouseover="breathIn.play()" id="funds" class="fundraiser">fund-<br>raiser</a>
+      </section>
+    </nav>
 
   </body>
 
