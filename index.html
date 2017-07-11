@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.2/svg.min.js"></script>
+
     <script>
-      var clip = new Audio();
-      clip.src = './assets/sounds/breath.mp3';
+      var breathIn = new Audio();
+      var breathOut = new Audio();
+      breathIn.src = './assets/sounds/breath-in.mp3';
+      breathOut.src = './assets/sounds/breath-out.mp3';
     </script>
   </head>
   <body>
@@ -25,8 +28,8 @@
 
       <nav id="nav">
         <section class="nav-center">
-          <a onmouseover="clip.play()" href="https://justbreathechris.blogspot.com/" id="blog" class="blog">The<br>story</a>
-          <a onmouseover="clip.play()" id="funds" class="fundraiser">fund-<br>raiser</a>
+          <a onmouseover="breathOut.play()" href="https://justbreathechris.blogspot.com/" id="blog" class="blog">The<br>story</a>
+          <a onmouseover="breathIn.play()" id="funds" class="fundraiser">fund-<br>raiser</a>
         </section>
       </nav>
     </main>
